@@ -39,3 +39,10 @@ INSERT INTO `employees` (`employeeNumber`, `lastName`, `firstName`, `extension`,
 (1621, 'Nishi', 'Mami', 'x101', 'mnishi@classicmodelcars.com', '5', '', 'Sales Rep'),
 (1625, 'Kato', 'Yoshimi', 'x102', 'ykato@classicmodelcars.com', '5', '', 'Sales Rep'),
 (1702, 'Gerard', 'Martin', 'x2312', 'mgerard@classicmodelcars.com', '4', '', 'Sales Rep');
+
+CREATE TABLE IF NOT EXISTS `symbols_activetime` (
+    sid int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    symbol varchar(33),
+    start_time time,
+    end_time time
+);

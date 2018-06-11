@@ -85,7 +85,28 @@ class Examples extends CI_Controller {
 			$this->_example_output($output);
 	}
 
-	public function orders_management()
+    public function symbols_activetime()
+    {
+        try{
+            $crud = new grocery_CRUD();
+
+//            $crud->set_theme('datatables');
+            $crud->set_table('symbols_activetime');
+            $crud->set_subject('symbol');
+//            $crud->required_fields('city');
+//            $crud->columns('city','country','phone','addressLine1','postalCode');
+
+            $output = $crud->render();
+
+            $this->_example_output($output);
+
+        }catch(Exception $e){
+            show_error($e->getMessage().' --- '.$e->getTraceAsString());
+        }
+    }
+
+
+    public function orders_management()
 	{
 			$crud = new grocery_CRUD();
 
