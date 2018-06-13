@@ -1,9 +1,9 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 /**
  * CodeIgniter
  *
  * An open source application development framework for PHP 5.1.6 or newer
-... mpla mpla mpla
+ * ... mpla mpla mpla
  */
 
 $active_group = 'default';
@@ -14,8 +14,10 @@ $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = '';
 $db['default']['database'] = 'grocerycrud';
-//$db['default']['dbdriver'] = 'mysql';
 $db['default']['dbdriver'] = 'mysqli';
+//$db['default']['dbdriver'] = 'postgres';
+$db['default']['dsn'] = 'pgsql:host=localhost;port=5432;dbname=grocerycrud';
+
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;

@@ -652,7 +652,7 @@ div.pGroup {
 	cursor: pointer;
 	width: 16px;
 	height:16px;
-	float:right;
+	float:left;
 	border: none !important;
 	padding:0px !important;
 	padding-bottom:0px !important;
@@ -665,7 +665,7 @@ div.pGroup {
 	cursor: pointer;
 	width: 16px;
 	height:16px;
-	float:right;
+	float:left;
 	border: none !important;
 	padding:0px !important;
 	padding-bottom:0px !important;
@@ -678,7 +678,7 @@ div.pGroup {
 	cursor: pointer;
 	width: 16px;
 	height:16px;
-	float:right;
+	float:left;
 	border: none !important;
 	padding:0px !important;
 	padding-bottom:0px !important;
@@ -691,7 +691,7 @@ div.pGroup {
 	cursor: pointer;
 	width: 16px;
 	height:16px;
-	float:right;
+	float:left;
 	border: none !important;
 	padding:0px !important;
 	padding-bottom:0px !important;
@@ -828,7 +828,7 @@ div.flexigrid a:hover
 }
 .crud-action
 {
-	float:right;
+	float:leftZ;
 	margin-left:5px;
 	padding:0px;
 	margin-right: 3px;
