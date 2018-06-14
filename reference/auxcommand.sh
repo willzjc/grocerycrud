@@ -41,6 +41,6 @@ server_cfg="docker_servers"
 while read server; do
   echo "Scanning: ${server}"
   dset $server
-  docker ps -a --format '{{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Command}}\t{{.Status}}\t{{.Ports}}\t{{.RunningFor}}' > docker_proccesses_${server}.proclog &
+  docker ps --format '{{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Command}}\t{{.Status}}\t{{.Ports}}\t{{.RunningFor}}' > docker_proccesses_${server}.proclog &
 #  sleep 1
 done < $server_cfg
